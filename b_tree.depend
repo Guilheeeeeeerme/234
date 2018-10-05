@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1536085370 source:c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\array.c
+	<stdio.h>
+	<math.h>
+
+1536191822 source:c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\btree-node.c
+	<stdio.h>
+	<stdlib.h>
+	"btree-node.h"
+
+1538099307 c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\btree-node.h
+
+1538107450 source:c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\btree.c
+	<stdio.h>
+	<stdlib.h>
+	"btree.h"
+	"array.h"
+
+1536085427 c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\btree.h
+	"btree-node.h"
+
+1536086592 c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\array.h
+
+1538107609 source:c:\users\breno\desktop\trabalho algoritmos\b_tree\b_tree\main.c
+	<stdio.h>
+	"btree.h"
+
+1536085372 source:d:\trabalho algoritmos\b_tree\b_tree\array.c
+	<stdio.h>
+	<math.h>
+
+1536191824 source:d:\trabalho algoritmos\b_tree\b_tree\btree-node.c
+	<stdio.h>
+	<stdlib.h>
+	"btree-node.h"
+
+1538274620 d:\trabalho algoritmos\b_tree\b_tree\btree-node.h
+
+1538262718 source:d:\trabalho algoritmos\b_tree\b_tree\btree.c
+	<stdio.h>
+	<stdlib.h>
+	"btree.h"
+	"array.h"
+
+1536085428 d:\trabalho algoritmos\b_tree\b_tree\btree.h
+	"btree-node.h"
+
+1536086594 d:\trabalho algoritmos\b_tree\b_tree\array.h
+
+1538274330 source:d:\trabalho algoritmos\b_tree\b_tree\main.c
+	<stdio.h>
+	<stdlib.h>
+	"btree.h"
+	"rbtree.h"
+
+1538280818 d:\trabalho algoritmos\b_tree\b_tree\rbtree.h
+	"rbtree-node.h"
+
+1538274642 d:\trabalho algoritmos\b_tree\b_tree\rbtree-node.h
+
+1538285744 source:d:\trabalho algoritmos\b_tree\b_tree\rbtree.c
+	"rbtree.h"
+	<stdlib.h>
+
+1538256200 source:d:\trabalho algoritmos\b_tree\b_tree\rbtree-node.c
+	"rbtree.h"
+	<stdlib.h>
+
+1536085372 source:e:\trabalho algoritmos\b_tree\b_tree\array.c
+	<stdio.h>
+	<math.h>
+
+1536191824 source:e:\trabalho algoritmos\b_tree\b_tree\btree-node.c
+	<stdio.h>
+	<stdlib.h>
+	"btree-node.h"
+
+1538274620 e:\trabalho algoritmos\b_tree\b_tree\btree-node.h
+
+1538256200 source:e:\trabalho algoritmos\b_tree\b_tree\rbtree-node.c
+	"rbtree.h"
+	<stdlib.h>
+
+1538280818 e:\trabalho algoritmos\b_tree\b_tree\rbtree.h
+	"rbtree-node.h"
+
+1538274642 e:\trabalho algoritmos\b_tree\b_tree\rbtree-node.h
+
+1538286294 source:e:\trabalho algoritmos\b_tree\b_tree\rbtree.c
+	"rbtree.h"
+	<stdlib.h>
+
+1538697104 source:e:\trabalho algoritmos\b_tree\b_tree\btree.c
+	<stdio.h>
+	<stdlib.h>
+	"btree.h"
+	"array.h"
+
+1538697104 e:\trabalho algoritmos\b_tree\b_tree\btree.h
+	"btree-node.h"
+
+1536086594 e:\trabalho algoritmos\b_tree\b_tree\array.h
+
+1538697104 source:e:\trabalho algoritmos\b_tree\b_tree\main.c
+	<stdio.h>
+	<stdlib.h>
+	"btree.h"
+	"rbtree.h"
+
