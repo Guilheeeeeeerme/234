@@ -2,25 +2,29 @@
 #include <stdlib.h>
 #include "btree-node.h"
 
-BTreeNode* BTreeNode__new(){
+BTreeNode *BTreeNode__new()
+{
 
-    BTreeNode* bTreeNode = (BTreeNode*) malloc (sizeof(BTreeNode));
+    BTreeNode *bTreeNode = (BTreeNode *)malloc(sizeof(BTreeNode));
 
     bTreeNode->n = 0;
     bTreeNode->leaf = TRUE;
     bTreeNode->parent = NULL;
 
-    for(int i = 0; i<(CHILDREN); i++){
+    for (int i = 0; i < (CHILDREN); i++)
+    {
         bTreeNode->children[i] = NULL;
     }
 
     return bTreeNode;
 }
 
-int BTreeNode__isLeaf(BTreeNode* root){
+int BTreeNode__isLeaf(BTreeNode *root)
+{
     return root->leaf == TRUE;
 }
 
-int BTreeNode__isFull(BTreeNode* root){
-    return root->n == (ORDER-1);
+int BTreeNode__isFull(BTreeNode *root)
+{
+    return root->n == (ORDER - 1);
 }
