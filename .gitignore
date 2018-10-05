@@ -1,4 +1,2 @@
-bin/*.exe
-obj/*.o
-bin/Debug/*.exe
-obj/Debug/*.o
+bin/Debug/*
+obj/Debug/*
