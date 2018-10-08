@@ -5,8 +5,8 @@ all: clean
 	gcc -c rbtree.c -o obj/Debug/rbtree.o
 	gcc -c rbtree-node.c -o obj/Debug/rbtree-node.o
 	gcc -c main.c -o obj/Debug/main.o
-	gcc obj/Debug/array.o obj/Debug/btree-node.o obj/Debug/btree.o obj/Debug/main.o obj/Debug/rbtree-node.o obj/Debug/rbtree.o -o bin/Debug/b_tree
+	gcc obj/Debug/array.o obj/Debug/btree-node.o obj/Debug/btree.o obj/Debug/main.o obj/Debug/rbtree-node.o obj/Debug/rbtree.o -o b_tree
 clean:
 	del /s /q obj\*.o || rm -rf obj/Debug/*.o || exit 0
 run: all
-	bin/Debug/b_tree.exe < input.in > output.js
+	b_tree.exe < input.in > output.json

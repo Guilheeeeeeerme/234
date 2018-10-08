@@ -28,9 +28,9 @@ void addRB(RBTree *rbTree, int k)
     else
     {
         RBTreeNode *aux, *pai;
-        printf("%d", rbTree->root->value);
+        // printf("%d", rbTree->root->value);
         aux = rbTree->root->right; //ERRO AQUI
-        printf("%d", aux->value);
+        // printf("%d", aux->value);
         while (aux != rbTree->root)
         { //OU AQUI
             pai = aux;
@@ -164,6 +164,33 @@ void display(RBTree *rbTree, RBTreeNode *p)
 {
     if (p != NULL)
     {
+        printf("{");
+        printf("\"key\": %d,", p->value);
+        printf("\"colour\": ");
+        if (p->color == BLACK)
+            printf("\"black\",");
+        else
+            printf("\"red\",");
+
+
+        if (p->left != rbTree->root)
+        {
+            printf("\"left\": ");
+            display(rbTree, p->left);
+        }
+        if (p->right != rbTree->root)
+        {
+            printf("\"right\": ");
+            display(rbTree, p->right);
+        }
+        printf("},");
+    }
+}
+
+void displayBreno(RBTree *rbTree, RBTreeNode *p)
+{
+    if (p != NULL)
+    {
         printf("\n\t NODE: ");
         printf("\n Key: %d", p->value);
         printf("\n Colour: ");
@@ -227,12 +254,12 @@ void delRB(RBTreeNode *x, int k)
     else
     {
         if (x->left->left != NULL)
-        {   //Tem filho esquerdo
+        { //Tem filho esquerdo
             //            x->value = getSuccRB();
             delRB(x->left, x->value);
         }
         else if (x->right->left != NULL)
-        {   //Tem filho direito
+        { //Tem filho direito
             //            x->value = getPredRB();
             delRB(x->right, x->value);
         }

@@ -7,7 +7,7 @@ int DEBUG = 0;
 
 void menuBtree();
 void menuRBtree();
-void converterParaRb(BTree *bTree);
+void converterParaRb(BTreeNode *bTreeNode, RBTree *rbTree);
 
 int main(int argc, char *argv)
 {
@@ -44,6 +44,7 @@ int main(int argc, char *argv)
 void menuBtree(BTree *bTree)
 {
     int opcao, k;
+    RBTree rbTree;
 
     do
     {
@@ -79,7 +80,9 @@ void menuBtree(BTree *bTree)
             bTree->show(bTree);
             break;
         case 4:
-            converterParaRb(bTree);
+            rbTree = RBTree_new();
+            converterParaRb(bTree->root, &rbTree);
+            disp(&rbTree);
             break;
         case 5:
             break;
@@ -137,6 +140,30 @@ void menuRBtree(RBTree *rbTree)
     } while (opcao != 4);
 }
 
-void converterParaRb(BTree *bTree)
+void converterParaRb(BTreeNode *bTreeNode, RBTree *rbTree)
 {
+
+    if (bTreeNode->n == 1)
+    {
+        rbTree->add(rbTree, bTreeNode->keys[0]);
+    }
+    else if (bTreeNode->n == 2)
+    {
+        rbTree->add(rbTree, bTreeNode->keys[0]);
+        rbTree->add(rbTree, bTreeNode->keys[1]);
+    }
+    else if (bTreeNode->n == 3)
+    {
+        rbTree->add(rbTree, bTreeNode->keys[1]);
+        rbTree->add(rbTree, bTreeNode->keys[0]);
+        rbTree->add(rbTree, bTreeNode->keys[2]);
+    }
+
+    if (bTreeNode->leaf == FALSE)
+    {
+        for (int i = 0; i <= bTreeNode->n; i++)
+        {
+            converterParaRb(bTreeNode->children[i], rbTree);
+        }
+    }
 }
