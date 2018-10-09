@@ -9,4 +9,4 @@ all: clean
 clean:
 	del /s /q obj\*.o || rm -rf obj/Debug/*.o || exit 0
 run: all
-	b_tree.exe < input.in > output.json
+	b_tree.exe
